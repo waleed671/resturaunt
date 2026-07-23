@@ -1,0 +1,74 @@
+.orders-tabs {
+  display: flex;
+  gap: 8px;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 6px;
+  margin-bottom: var(--space-6);
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.orders-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+  transition: all 0.2s var(--ease);
+  flex-shrink: 0;
+}
+.orders-tab:hover { color: #ffffff; background: rgba(255, 255, 255, 0.05); }
+.orders-tab.active {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 4px 12px -2px rgba(139, 92, 246, 0.3);
+}
+
+.orders-tab-count {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+.orders-tab.active .orders-tab-count { background: rgba(255, 255, 255, 0.2); color: #ffffff; }
+
+.orders-search {
+  position: relative;
+  margin-bottom: var(--space-4);
+}
+.orders-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.payment-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+.payment-badge.paid {
+  background: rgba(16,185,129,0.1);
+  color: #10b981;
+}
+
+.btn-xs {
+  padding: 4px 10px;
+  font-size: 12px;
+  gap: 4px;
+}
